@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">CircNet: Meshing 3D Point Clouds with Circumcenter Detection </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="http://huanlei.xyz/" target="_blank">Huan Lei</a>,</span>
+                <span class="author-block">
+                  <a>Ruitao Leng</a>,</span>
+                <span class="author-block">
+                    <a>Liang Zheng</a>,</span>
+                  <span class="author-block">
+                    <a href="http://users.cecs.anu.edu.au/~hongdong/" target="_blank">Hongdong Li</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">The Australian National University<br>ICLR 2023</span>
+<!--                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>-->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://openreview.net/forum?id=zQWqV2tzDv" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Open Review</span>
+                      </a>
+                    </span>
+
+                    <!-- Arxiv PDF link -->
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/2301.09253" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Arxiv</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/EnyaHermite/CircNet" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <!-- Your image here -->
+        <img src="static/images/duality.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+      The duality between a triangle and its circumcenter.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Reconstructing 3D point clouds into triangle meshes is a key problem in computational geometry and surface
+            reconstruction. Point cloud triangulation solves this problem by providing edge information to the input
+            points. Since no vertex interpolation is involved, it is beneficial to preserve sharp details on the surface.
+            Taking advantage of learning-based techniques in triangulation, existing methods enumerate the complete
+            combinations of candidate triangles, which is both complex and inefficient. In this paper, we leverage the
+            duality between a triangle and its circumcenter, and introduce a deep neural network that detects the
+            circumcenters to achieve point cloud triangulation. Specifically, we introduce multiple anchor priors to
+            divide the neighborhood space of each point. The neural network then learns to predict the presences and
+            locations of circumcenters under the guidance of those anchors. We extract the triangles dual to the
+            detected circumcenters to form a primitive mesh, from which an edge-manifold mesh is produced via simple
+            post-processing. Unlike existing learning-based triangulation methods, the proposed method bypasses an
+            exhaustive enumeration of triangle combinations and local surface parameterization. We validate the efficiency,
+            generalization, and robustness of our method on prominent datasets of both watertight and open surfaces.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <h2 class="title is-3">The neural network for circumcenter detection</h2>
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/CircNet.png" alt="MY ALT TEXT"/>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Reconstruction of large buildings and complex shapes</h2>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/vis_ab.png"/>
+      </div>
+  </div>
+</section>
+
+
+<section class="hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Quantitative results on the ABC test split</h2>
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/ABC_test.png" alt="MY ALT TEXT"/>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Gerneralization to watertight meshes (FAUST)</h2>
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/faust.png" alt="MY ALT TEXT"/>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Gerneralization to open-surface meshes (MGN)</h2>
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/mgn.png" alt="MY ALT TEXT"/>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Large-scale reconstruction & Method robustness</h2>
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/robust.png" alt="MY ALT TEXT"/>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+  <div class="container is-max-desktop">
+      <h2 class="title is-3">&nbsp&nbsp Training/test details</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/train_details.png" alt="MY ALT TEXT"/>
+      </div>
+      <div class="item">
+       <!-- Your image here -->
+          <img src="static/images/test_details.png" alt="MY ALT TEXT"/>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">    
+    <div class="container is-max-desktop">       
+      <h2 class="title is-3">&nbsp&nbsp More reconstruction results</h2>    
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/vis_all_a.png" alt="MY ALT TEXT"/>
+       </div>
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/vis_all_b.png" alt="MY ALT TEXT"/>
+       </div>
+    </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+  <div class="container is-max-desktop">
+      <h2 class="title is-3">Choice of hyperparameters</h2>
+      <div class="item">
+       <!-- Your image here -->
+          <img src="static/images/hyperparameters.png" alt="MY ALT TEXT"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+  <div class="container is-max-desktop">
+      <h2 class="title is-3">Detection rates w.r.t. max interior angle of GT triangles</h2>
+      <div class="item">
+       <!-- Your image here -->
+          <img src="static/images/Analysis.png" alt="MY ALT TEXT"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title"> BibTeX</h2>
+      <pre><code>
+      @inproceedings{lei2023circnet,
+      title={CircNet: Meshing 3D Point Clouds with Circumcenter Detection},
+      author={Lei, Huan and Leng, Ruitao and Zheng, Liang and Li, Hongdong},
+      journal={International Conference on Learning Representations},
+      year={2023}}
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
